@@ -4,25 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CSS Pig</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700" rel="stylesheet">
+    <title>Cheeky Pog</title>
     <style>
 
     html{
+        text-align: center;
         height: 100%;
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 400;
     }    
     body {
-        
-        margin: 0;
+        text-align: center;
+        margin: 2rem;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background: linear-gradient(to bottom, rgb(243, 244, 253) , rgb(217, 218, 228));
+    }
+
+     h1 {
+        color: #888;
+        margin-top: 2.5rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        display: inline;
+        border-bottom: 4px solid #888;
     }
     
     .area {
         position: relative;
         width: 600px;
         height: 400px;
-        margin: 8% auto auto 33%;
+        margin: 8% auto auto 28%;
+        transform: scale(1.3);
         /* border: 1px solid red; */
         /* background: linear-gradient(to bottom right, rgb(223, 153, 153) , #DE6565); */
     }
@@ -99,11 +113,22 @@
          transform: rotate(-10deg);
          background: linear-gradient(to bottom left, pink , rgb(235, 117, 137));
      }
-
+     footer {
+        margin-top: 10rem;
+        font-size: 1rem;
+        color: #888;
+    }
+    a {
+        color: #888;
+    }
+    a:visited {
+        color: #888;
+    }
 
     </style>
 </head>
 <body>
+    <h1>CSS Cheeky Pog</h1>
     <div class="area">
         <div class="pig-head"></div>
         <div class="left-ear"></div>
@@ -113,5 +138,10 @@
         <div class="eye"></div>
         <div class="eye"></div>
     </div>
+
+    <footer>
+            <a href="https://twitter.com/chanchowancho">Victor Jones</a>
+            <p style="color:gray;" id="text"></p>
+        </footer>
 </body>
 </html>
