@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Pig</title>
+    <style>
+
+    html{
+        height: 100%;
+    }    
+    body {
+        
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background: linear-gradient(to bottom, rgb(243, 244, 253) , rgb(217, 218, 228));
+    }
+    
+    .area {
+        position: relative;
+        width: 600px;
+        height: 400px;
+        margin: 8% auto auto 33%;
+        /* border: 1px solid red; */
+        /* background: linear-gradient(to bottom right, rgb(223, 153, 153) , #DE6565); */
+    }
+
+    .pig-head{
+        z-index: 1;
+         position: absolute;
+         margin: 5% 25%;
+         background-color: pink;
+         height: 300px; 
+         width: 350px;
+         content: "";
+         border-radius: 47%; 
+         background: linear-gradient(to bottom right, rgb(250, 205, 213) , pink);
+         box-shadow: 5px 10px 20px 0px rgb(219, 219, 219);
+     }
+
+     .snout {
+         position: absolute;
+         z-index: 2;
+         top: 25%;
+         left: 50%;
+         width: 150px;
+         height: 100px;
+         background-color: #DE6565;
+         border-radius: 50%;
+         box-shadow: -10px 7px rgb(224, 140, 140);
+         background: linear-gradient(to bottom right, rgb(223, 153, 153) , #DE6565);
+
+     }
+
+     .nostril{
+         z-index: 3;
+         position: absolute;
+         height: 50px;
+         width: 50px;
+         border-radius: 50%;
+         background-color: black;
+         top:30%;
+         left: 55%;
+         box-shadow: 55px -2px 0px 0px black, 3px -5px 0px 0px rgb(156, 62, 62), 58px -7px 0px 0px rgb(156, 62, 62),20px 88px 0px 0px pink, 20px 90px 0px 0px #DE6565;
+     }
+
+     .eye {
+        z-index: 4;
+         position: absolute;
+         height: 5px;
+         width: 5px;
+         border-radius: 50%;
+         top: 30%;
+         left: 30%;
+         background-color: white;
+         box-shadow: 10px 10px 0px 20px black, 300px 0px 0px 0px white, 310px 10px 0px 20px black ;
+     }
+
+     .left-ear {
+         z-index: -1;
+         position: absolute;
+         margin: 8% 27%;
+         background-color: pink;
+         height: 100px; 
+         width: 100px;
+         transform: rotate(10deg);
+         background: linear-gradient(to bottom right, pink , rgb(235, 117, 137));
+     }
+
+    .right-ear {
+         z-index: -1;
+         position: absolute;
+         margin: 8% 62%;
+         background-color: pink;
+         height: 100px; 
+         width: 100px;
+         transform: rotate(-10deg);
+         background: linear-gradient(to bottom left, pink , rgb(235, 117, 137));
+     }
+
+
+    </style>
+</head>
+<body>
+    <div class="area">
+        <div class="pig-head"></div>
+        <div class="left-ear"></div>
+        <div class="right-ear"></div>
+        <div class="snout"></div>
+        <div class="nostril"></div>
+        <div class="eye"></div>
+        <div class="eye"></div>
+    </div>
+</body>
+</html>
